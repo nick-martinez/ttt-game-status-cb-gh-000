@@ -31,7 +31,7 @@ end # End won(board)
 
 
 def full?(board)
-  board.all?{|square| square == "X" || square == "O"}
+  board.all? {|square| square == "X" || square == "O"}?
 end # End full?(board)
 
 
