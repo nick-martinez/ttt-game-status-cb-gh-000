@@ -23,6 +23,8 @@ def won(board)
       return ttt_win
     elsif (position_1 == "O" && position_2 == "O" && position_3 == "O")
       return ttt_win
+    else
+      return false
     end
   end
 end # End won(board)
@@ -43,7 +45,7 @@ end # End draw?(board)
 
 
 def over?(board)
-  if (won?(board) == true || full?(board) == true || over?(board) == true)
+  if (won?(board) == true || full?(board) == true || draw?(board) == true)
     return true
   else
     return false
