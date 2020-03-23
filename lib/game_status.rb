@@ -25,6 +25,7 @@ def won?(board)
       return ttt_win
     end
   end
+  #else
   return false
 end # End won(board)
 
